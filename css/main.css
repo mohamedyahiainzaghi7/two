@@ -1,0 +1,144 @@
+/* galobal reset */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --white :#fff;
+    --black : #000;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/pexels-thirdman-8926835.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0px 80px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0 ;
+}
+
+.nav-logo img {
+    width: 160px;
+}
+
+nav .links {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 40px;
+}
+
+nav .links .btn {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.content {
+    margin-top: 180px
+}
+
+.content h2 {
+    font-size: 60px;
+    color: var(--white);
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+
+.content .search-box {
+    background-color: var(--white);
+    padding: 18px 20px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.search-box input {
+    background-color: transparent;
+    width: 600px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box button img {
+    width: 22px;
+}
+
+.content p {
+    color: var(--white);
+}
+
+.arrows {
+    margin-top: 120px;
+}
+.arrows img {
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    width: 15px;
+    border-radius: 5px;
+    box-sizing: content-box;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+    .search-box input {
+        width: 230px;
+    }
+
+    .nav-logo {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    nav .links {
+        justify-content: center;
+    }
+    nav .links a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    nav .links .btn {
+        background-color: transparent;
+        color: var(--white);
+        padding: 0;
+    }
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content {
+        margin-top: 85px;
+    }
+    .search-box{
+        padding: 10px 20px ;
+    }
+    .search-box button img{
+        width: 16px;
+    }
+}
+
+
+
